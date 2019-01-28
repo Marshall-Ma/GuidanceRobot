@@ -1,0 +1,34 @@
+/* components/nav/index.wxss */
+.container{
+    width: 700rpx;
+    /* margin-top: 10rpx; */
+    color: black;
+    line-height: 90rpx;
+    font-size: 36rpx;
+  }
+  .container .image{
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 10rpx;
+  }
+  .container .manage{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 90rpx;
+    border-top: 2rpx solid grey;
+    padding-top:8rpx;
+    /* border-bottom: 1rpx solid #e9e9e9; */
+  }
+  .container .manage::after{
+    position: absolute;
+    right: 30rpx;
+    top: 34rpx;
+    content: '';
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #7f7f7f;
+    border-right: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

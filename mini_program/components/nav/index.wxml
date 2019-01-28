@@ -1,0 +1,7 @@
+<!--components/nav/index.wxml-->
+<view bind:tap="onNav" class="container">
+    <view class="manage">
+        <image class="image" src="{{imgPath}}" />
+        <text>{{navName}}</text>
+    </view>
+</view>

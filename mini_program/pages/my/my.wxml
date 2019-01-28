@@ -1,0 +1,23 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <v-button wx:if="{{!authorized}}" open-type="getUserInfo" class="not-authoried" bind:getuserinfo="onGetUserInfo">
+  <!-- <v-button open-type="getUserInfo" class="not-authoried" bind:getuserinfo="onGetUserInfo"> -->
+    <image slot="userImg" class="avatar" src="/images/my/user.png" />
+    <text slot="userName" class="login-text">登录/注册</text>
+  </v-button>
+
+  <view wx:if="{{authorized}}" class="authrized">
+    <view class="avatar-nickname">
+      <image src="{{userInfo.avatarUrl}}" class="avatar" />
+      <text  class="login-text">{{userInfo.nickName}}</text>
+    </view>
+    <!-- <image class="setting" src="/images/my/setting@wh.png" bind:tap="onSetting"/> -->
+  </view>
+
+  <text class="title-text">Bayes室内导航</text>
+  
+  <v-nav class="nav-container" bind:navigate="onNavigate" navName="我的信息"  imgPath='/images/icon/userinfo@blue.png'></v-nav>
+  <v-nav class="nav-container" bind:navigate="onNavigate" navName="优惠券"  imgPath='/images/icon/coupun@blue.png'></v-nav>
+  <v-nav class="nav-container" bind:navigate="onNavigate" navName="收藏的商家"  imgPath='/images/icon/mall@blue.png'></v-nav>
+
+</view>

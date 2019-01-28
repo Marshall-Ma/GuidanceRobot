@@ -1,0 +1,23 @@
+/* pages/map/map.wxss */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-distation{
+    display: flex;
+    flex-direction: column;
+    width: 600rpx;
+}
+.title{
+    font-size: 36rpx;
+}
+
+.map{
+    width:700rpx;
+    height: 300rpx;
+}

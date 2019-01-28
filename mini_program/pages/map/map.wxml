@@ -1,0 +1,10 @@
+<!--pages/map/map.wxml-->
+<view class="container">
+    <text>所在商场：徐家汇·美罗城</text>
+    <view class="start-distation">
+        <text class="title">起点:优衣库</text>
+        <text class="title">终点:肯德基</text>
+    </view>
+    <image class="map" src="/images/map/F1.png" />
+
+</view>
